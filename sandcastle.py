@@ -31,8 +31,8 @@ print ""
 for name in bucketNames:
 	r = requests.head("http://%s%s.s3.amazonaws.com" % (args.targetStem, name))
 	print("%s%s --> %s" % (args.targetStem, name, r.status_code))
-# Optional – special exceptions, example hardcoded below
-print "[*] Now checking special exceptions."
-special1 = requests.head("http://assets.%s.com.s3.amazonaws.com" % args.targetStem)
-print(args.targetStem, "assets", special1.status_code)
+# OPTIONAL – special exceptions, example hardcoded below
+# print "[*] Now checking special exceptions."
+# special1 = requests.head("http://assets.%s.com.s3.amazonaws.com" % args.targetStem)
+# print("%s%s%s --> %s" % ("assets.", args.targetStem,".com", special1.status_code))
 print("[+] Analysis complete. Please check for non-404 codes and anomalies.")
