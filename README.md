@@ -1,6 +1,10 @@
 <p align="center">
    
 <img src="https://cloud.githubusercontent.com/assets/4115778/24827505/eab7322a-1c42-11e7-96f3-dbc772da5f10.png" width="70%" alt="Sandcastle logo - AWS S3 bucket enumeration">
+<br/>
+<img src="https://img.shields.io/github/issues/yasinS/sandcastle.svg" alt="Issues">
+<img src="https://img.shields.io/github/issues-pr-closed-raw/yasinS/sandcastle.svg" alt="PRs">
+<img src="https://img.shields.io/github/license/yasinS/sandcastle.svg" alt="License">
 </p>
 
 Inspired by a conversation with Instacart's [@nickelser](https://github.com/nickelser) on HackerOne, I've optimised and published Sandcastle – a Python script for AWS S3 bucket enumeration, formerly known as bucketCrawler.
