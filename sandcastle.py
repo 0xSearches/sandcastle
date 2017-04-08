@@ -12,7 +12,9 @@ print """
 
   ___) | (_| | | | | (_| | (_| (_| \__ \ |_| |  __/
  |____/ \__,_|_| |_|\__,_|\___\__,_|___/\__|_|\___|                                        
- S3 bucket enumeration // public release v0.1 // ysx                       
+ 
+ S3 bucket enumeration // release v1.0.0 // ysx                       
+
 """
 # Receive – target stem and argument check
 targetStem = ""
