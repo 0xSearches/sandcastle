@@ -25,6 +25,7 @@ with open('bucket-names.txt', 'r') as f:
 print "[*] Commencing analysis of target '%s', reading from '%s'." % (args.targetStem, f.name)
 print ""
 # Analyse – standard permutations and special exceptions
+# TODO – alert to 403/200s or give readout at end?
 for name in bucketNames:
 	r = requests.head("http://%s%s.s3.amazonaws.com" % (args.targetStem, name))
 	print("%s%s --> %s" % (args.targetStem, name, r.status_code))
