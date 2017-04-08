@@ -21,11 +21,11 @@ Here's how to get started:
 4. Each permutation will be returned with its HTTP status code
 
 ```
-usage: sandcastle.py [-h] -t webStem
+usage: sandcastle.py [-h] -t targetStem
 
 optional arguments:
   -h, --help            show this help message and exit
-  -t webStem, --target webStem
+  -t targetStem, --target targetStem
                         Select a target stem name (e.g. 'instacart')
 ```
 
