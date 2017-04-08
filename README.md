@@ -30,11 +30,10 @@ optional arguments:
 ```
 
 ```
-('instacart', '-training', 403)
-('instacart', '-bucket', 404)
-('instacart', '-dev', 404)
-('instacart', '-attachments', 404)
-('instacart', '-photos', 404)
+instacart-training --> 403
+instacart-bucket --> 404
+instacart-dev --> 404
+instacart-attachments --> 404
 ```
 
 ### Status codes and testing
