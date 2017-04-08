@@ -14,11 +14,11 @@ In its current first-version form, the script takes a target name as the "web st
 [...]
 ```
 ## Getting started
-It's easy to get started with Sandcastle. 
+Here's how to get started:
 1. Clone the repository to your desired location
 2. Open `bucket-names.txt` and customise your permutations (optional)
 3. Run `python sandcastle.py -t <targetname>`
-4. Each permutation will be returned with a HTTP status code
+4. Each permutation will be returned with its HTTP status code
 
 ```
 usage: sandcastle.py [-h] -t webStem
@@ -41,7 +41,7 @@ instacart-attachments --> 404
 | Status code        | Definition           | Notes  |
 | ------------- | ------------- | -----|
 | 404      | Bucket Not Found | Not a target for analysis |
-| 403      | Access Denied      |   Target for analysis – check read and write separately |
+| 403      | Access Denied      |   Target for analysis – write may still be possible |
 | 200 | Publicly Accessible      |    Target for analysis  |
 
 ### AWS CLI commands
