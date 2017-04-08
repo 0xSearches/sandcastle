@@ -57,7 +57,8 @@ From the Amazon [documentation](http://docs.aws.amazon.com/AmazonS3/latest/dev/U
 
 > In terms of implementation, buckets and objects are resources, and Amazon S3 provides APIs for you to manage them.
 
-## Acknowledgements
-* This project is licensed under the MIT License, as referenced in `LICENSE`.
-* Castle (icon) by Andrew Doane from the Noun Project
-* Nixie One (logo typeface) free by Jovanny Lemonad
+## Closing remarks
+* This is my first public security project on GitHub, and is licensed under the MIT License.
+* Usage acknowlegements:
+  * Castle (icon) by Andrew Doane from the Noun Project
+  * Nixie One (logo typeface) free by Jovanny Lemonad
