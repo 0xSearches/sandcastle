@@ -1,0 +1,5 @@
+include bucket_names.txt
+include CHANGELOG.md
+include README.md
+include README.rst
+include LICENSE

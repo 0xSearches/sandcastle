@@ -9,7 +9,7 @@ print """
  _\ \/ _ `/ _ \/ _  / __/ _ `(_-</ __/ / -_)
 /___/\_,_/_//_/\_,_/\__/\_,_/___/\__/_/\__/ 
                                             
-S3 bucket enumeration // release v1.2.1 // ysx
+S3 bucket enumeration // release v1.2.2 // ysx
 """
 # Receive – target stem and argument check
 targetStem = ""
