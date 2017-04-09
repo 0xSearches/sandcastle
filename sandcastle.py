@@ -4,26 +4,26 @@
 import sys, os, requests
 from argparse import ArgumentParser
 print """
-  ____                  _               _   _      
- / ___|  __ _ _ __   __| | ___ __ _ ___| |_| | ___ 
- \___ \ / _` | '_ \ / _` |/ __/ _` / __| __| |/ _ \
-
-  ___) | (_| | | | | (_| | (_| (_| \__ \ |_| |  __/
- |____/ \__,_|_| |_|\__,_|\___\__,_|___/\__|_|\___|                                        
- 
- S3 bucket enumeration // release v1.1.0 // ysx                       
-
+   ____             __             __  __   
+  / __/__ ____  ___/ /______ ____ / /_/ /__ 
+ _\ \/ _ `/ _ \/ _  / __/ _ `(_-</ __/ / -_)
+/___/\_,_/_//_/\_,_/\__/\_,_/___/\__/_/\__/ 
+                                            
+S3 bucket enumeration // release v1.2.0 // ysx
 """
 # Receive – target stem and argument check
 targetStem = ""
+inputFile = ""
 parser = ArgumentParser()
 parser.add_argument("-t", "--target", dest="targetStem",
                     help="Select a target stem name (e.g. 'instacart')", metavar="targetStem", required="True")
+parser.add_argument("-f", "--file", dest="inputFile",
+                    help="Select a bucket permutation file (default: bucket-names.txt)", default="bucket-names.txt", metavar="inputFile")
 args = parser.parse_args()
-with open('bucket-names.txt', 'r') as f: 
+with open(args.inputFile, 'r') as f: 
     bucketNames = [line.strip() for line in f] 
-print "[*] Commencing analysis of target '%s', reading from '%s'." % (args.targetStem, f.name)
-print " "
+    lineCount = len(bucketNames)
+print "[*] Commencing enumeration of target '%s', reading %i lines from '%s'." % (args.targetStem, lineCount, f.name)
 # Analyse – standard permutations and special exceptions
 for name in bucketNames:
 	r = requests.head("http://%s%s.s3.amazonaws.com" % (args.targetStem, name))
@@ -33,4 +33,4 @@ for name in bucketNames:
 		sys.stdout.write('')
 		# Non-matching analysis disabled by default
 		# print "[-] No match: %s%s --> %s" % (args.targetStem, name, r.status_code)
-print "[+] Analysis of '%s' complete." % (args.targetStem)
+print "[+] Enumeration of '%s' complete." % (args.targetStem)
