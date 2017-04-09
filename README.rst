@@ -29,9 +29,9 @@ Getting started
 ---------------
 
 Here's how to get started: 1. Install with Pip:
-``pip install sandcastle`` 2. Run ``sandcastle.py`` with the appropriate
-arguments (below) 3. Permutations which exist will be tagged as
-"potential matches"
+``pip install sandcastle`` 2. Run ``sandcastle.py`` with a target name
+and input file (grab an example from this repo) 3. Valid bucket
+permutations will be identified as "matches"
 
 ::
 
@@ -92,8 +92,8 @@ You can then upload any number of objects to the bucket.
 Closing remarks
 ---------------
 
--  This is my first public security project on GitHub, and is published
-   under the MIT License.
+-  This is my first public security project and package; Sandcastle is
+   published under the MIT License.
 -  Usage acknowlegements:
 -  Castle (icon) by Andrew Doane from the Noun Project
 -  Nixie One (logo typeface) free by Jovanny Lemonad

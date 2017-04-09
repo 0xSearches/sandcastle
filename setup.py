@@ -8,9 +8,6 @@ setup(
   scripts=['sandcastle.py'],
   url = 'https://github.com/yasinS/sandcastle',
   download_url = 'https://github.com/yasinS/sandcastle/archive/1.2.3.tar.gz',
-  package_data={
-        'sandcastle': ['bucket-names.txt'],
-  },
   keywords = ['amazons3', 'infosec', 'bucket'],
   classifiers=[
         "License :: OSI Approved :: MIT License",

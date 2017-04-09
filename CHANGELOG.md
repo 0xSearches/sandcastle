@@ -2,8 +2,10 @@
 All notable changes to the Sandcastle script will be documented in this file.
 
 ## 1.2.3 – 2017-04-09
-- Fixes minor issues with `setup.py` classifiers 
-- Fixes additional issue with default `bucket-names.txt` import
+- Due to PyPi issues, Sandcastle will not ship with a default `bucket-names.txt`.
+	* The example `bucket-names.txt` can be downloaded from this repo
+	* By default, Sandcastle searches for `bucket-names.txt` in the current directory 
+	* As previously, use the `-f` flag to specify a different input file
 - Removes "no match" display from Sandcastle script
 
 ## 1.2.2 – 2017-04-09
