@@ -12,17 +12,13 @@ print """
 S3 bucket enumeration // release v1.2.3 // ysx
 """
 # Receive – target stem and argument check
-_ROOT = os.path.abspath(os.path.dirname(__file__))
-def get_data(path):
-    return os.path.join(_ROOT, 'data', path)
-defaultFile = get_data('bucket-names.txt')
 targetStem = ""
 inputFile = ""
 parser = ArgumentParser()
 parser.add_argument("-t", "--target", dest="targetStem",
                     help="Select a target stem name (e.g. 'instacart')", metavar="targetStem", required="True")
 parser.add_argument("-f", "--file", dest="inputFile",
-                    help="Optional: select a bucket permutation file (default: bucket-names.txt)", default=defaultFile, metavar="inputFile")
+                    help="Select a bucket permutation file (default: bucket-names.txt)", default="bucket-names.txt", metavar="inputFile")
 args = parser.parse_args()
 with open(args.inputFile, 'r') as f: 
     bucketNames = [line.strip() for line in f] 
