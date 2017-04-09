@@ -3,6 +3,7 @@ CHANGELOG.md
 LICENSE
 README.md
 README.rst
+bucket-names.txt
 sandcastle.py
 setup.cfg
 setup.py
