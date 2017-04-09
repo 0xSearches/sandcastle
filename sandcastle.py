@@ -33,4 +33,4 @@ for name in bucketNames:
 		sys.stdout.write('')
 		# Non-matching analysis disabled by default
 		# print "[-] No match: %s%s --> %s" % (args.targetStem, name, r.status_code)
-print "[+] Analysis of '%s' complete." % (f.name)
+print "[+] Analysis of '%s' complete." % (args.targetStem)
