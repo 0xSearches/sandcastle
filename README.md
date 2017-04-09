@@ -29,7 +29,7 @@ Here's how to get started:
 ```
 usage: sandcastle.py [-h] -t targetStem [-f inputFile]
 
-optional arguments:
+arguments:
   -h, --help            show this help message and exit
   -t targetStem, --target targetStem
                         Select a target stem name (e.g. 'instacart')
