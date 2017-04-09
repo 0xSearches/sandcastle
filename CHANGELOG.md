@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to the Sandcastle script will be documented in this file.
 
+## 1.2.1 – 2017-04-09
+- Sandcastle is being packaged and published on PyPi; this version is used for compatibility purposes.
+
 ## 1.2.0 – 2017-04-09
 - Sandcastle now supports the `-f` argument (text file)
 	* The script defaults to `bucket-names.txt` if one is not given
