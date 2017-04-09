@@ -25,7 +25,7 @@ Here's how to get started:
 1. Clone the repository to your desired location
 2. Open `bucket-names.txt` and customise your permutations (optional)
 3. Run `python sandcastle.py -t <targetname>`
-4. Each permutation will be returned with its HTTP status code
+4. Permutations which exist will be tagged as "potential targets for analysis"
 
 ```
 usage: sandcastle.py [-h] -t targetStem
@@ -37,19 +37,21 @@ optional arguments:
 ```
 
 ```
-instacart-training --> 403
-instacart-bucket --> 404
-instacart-dev --> 404
-instacart-attachments --> 404
+[+] Match: shopify-dev --> 403
+[+] Match: shopify-pics --> 403
+[+] Match: shopify-assets --> 403
+[+] Match: shopify-development --> 403
+[+] Match: shopify-content --> 403
+[+] Match: shopify-ops --> 200
 ```
 
 ### Status codes and testing
 
 | Status code        | Definition           | Notes  |
 | ------------- | ------------- | -----|
-| 404      | Bucket Not Found | Not a target for analysis |
-| 403      | Access Denied      |   Target for analysis via the CLI |
-| 200 | Publicly Accessible      |    Target for analysis via the CLI  |
+| 404      | Bucket Not Found | Not a target for analysis (hidden by default)|
+| 403      | Access Denied      |   Potential target for analysis via the CLI |
+| 200 | Publicly Accessible      |    Potential target for analysis via the CLI  |
 
 ### AWS CLI commands
 Here's a quick reference of some useful AWS CLI commands:
