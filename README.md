@@ -23,17 +23,19 @@ In its first-version form, the script takes a target name as the "stem" argument
 ## Getting started
 Here's how to get started:
 1. Clone the repository to your desired location
-2. Open `bucket-names.txt` and customise your permutations (optional)
-3. Run `python sandcastle.py -t <targetname>`
-4. Permutations which exist will be tagged as "potential targets for analysis"
+2. Run `python sandcastle.py` with the appropriate arguments (below)
+3. Permutations which exist will be tagged as "potential matches"
 
 ```
-usage: sandcastle.py [-h] -t targetStem
+usage: sandcastle.py [-h] -t targetStem [-f inputFile]
 
 optional arguments:
   -h, --help            show this help message and exit
   -t targetStem, --target targetStem
                         Select a target stem name (e.g. 'instacart')
+  -f inputFile, --file inputFile
+                        Select a bucket permutation file (default: bucket-
+                        names.txt)
 ```
 
 ```
