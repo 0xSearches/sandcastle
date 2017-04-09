@@ -28,10 +28,10 @@ permutations, e.g. as below:
 Getting started
 ---------------
 
-Here's how to get started: 1. Clone the repository to your desired
-location 2. Run ``python sandcastle.py`` with the appropriate arguments
-(below) 3. Permutations which exist will be tagged as "potential
-matches"
+Here's how to get started: 1. Install with Pip:
+``pip install sandcastle`` 2. Run ``sandcastle.py`` with the appropriate
+arguments (below) 3. Permutations which exist will be tagged as
+"potential matches"
 
 ::
 

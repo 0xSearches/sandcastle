@@ -4,7 +4,7 @@
 <br/>
 <img src="https://img.shields.io/github/issues/yasinS/sandcastle.svg" alt="Issues">
 <img src="https://img.shields.io/github/issues-pr-closed-raw/yasinS/sandcastle.svg" alt="PRs">
-<img src="https://img.shields.io/github/license/yasinS/sandcastle.svg" alt="License">
+<img src="https://img.shields.io/pypi/v/sandcastle.svg" alt="Version">
 </p>
 
 Inspired by a conversation with Instacart's [@nickelser](https://github.com/nickelser) on HackerOne, I've optimised and published Sandcastle – a Python script for AWS S3 bucket enumeration, formerly known as bucketCrawler.
@@ -22,8 +22,8 @@ The script takes a target name as the "stem" argument (e.g. `instacart`) and ite
 ```
 ## Getting started
 Here's how to get started:
-1. Clone the repository to your desired location
-2. Run `python sandcastle.py` with the appropriate arguments (below)
+1. Install with Pip: `pip install sandcastle`
+2. Run `sandcastle.py` with the appropriate arguments (below)
 3. Permutations which exist will be tagged as "potential matches"
 
 ```
