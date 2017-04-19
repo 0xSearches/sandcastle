@@ -11,12 +11,12 @@ print """
                                             
 S3 bucket enumeration // release v1.2.3 // ysx
 """
-# Receive – target stem and argument check
+# Parse – target name and arguments
 targetStem = ""
 inputFile = ""
 parser = ArgumentParser()
 parser.add_argument("-t", "--target", dest="targetStem",
-                    help="Select a target stem name (e.g. 'instacart')", metavar="targetStem", required="True")
+                    help="Select a target stem name (e.g. 'shopify')", metavar="targetStem", required="True")
 parser.add_argument("-f", "--file", dest="inputFile",
                     help="Select a bucket permutation file (default: bucket-names.txt)", default="bucket-names.txt", metavar="inputFile")
 args = parser.parse_args()
@@ -24,7 +24,7 @@ with open(args.inputFile, 'r') as f:
     bucketNames = [line.strip() for line in f] 
     lineCount = len(bucketNames)
 print "[*] Commencing enumeration of target '%s', reading %i lines from '%s'." % (args.targetStem, lineCount, f.name)
-# Enumerate – standard permutations and status code analysis
+# Enumerate – standard permutations with status code analysis
 for name in bucketNames:
 	r = requests.head("http://%s%s.s3.amazonaws.com" % (args.targetStem, name))
 	if r.status_code != 404:
