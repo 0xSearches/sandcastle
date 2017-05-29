@@ -1,11 +1,13 @@
 # Change Log
 All notable changes to the Sandcastle script will be documented in this file.
 
+## 1.2.4 – 2017-05-28
+* Temporarily removed PyPi distribution channel
+* Shipping an updated bucket names wordlist
+* Script identifies potential matches and uses S3 CLI to check Read permissions
+
 ## 1.2.3 – 2017-04-09
-- Due to PyPi issues, Sandcastle will not ship with a default `bucket-names.txt`.
-	* The example `bucket-names.txt` can be downloaded from this repo
-	* By default, Sandcastle searches for `bucket-names.txt` in the current directory 
-	* As previously, use the `-f` flag to specify a different input file
+- PyPi distribution info not applicable; please see above
 - Removes "no match" display from Sandcastle script
 
 ## 1.2.2 – 2017-04-09

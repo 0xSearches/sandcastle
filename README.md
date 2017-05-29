@@ -21,10 +21,10 @@ The script takes a target name as the "stem" argument (e.g. `instacart`) and ite
 [...]
 ```
 ## Getting started
-Here's how to get started:
-1. Install with Pip: `pip install sandcastle`
+I've temporarily disabled Pip distribution. Here's how to get started:
+1. Clone this repo.
 2. Run `sandcastle.py` with a target name and input file (grab an example from this repo)
-3. Valid bucket permutations will be identified as "matches"
+3. Matching bucket permutations will be identified, and read permissions tested
 
 ```
 usage: sandcastle.py [-h] -t targetStem [-f inputFile]
@@ -39,12 +39,20 @@ arguments:
 ```
 
 ```
-[+] Match: shopify-dev --> 403
-[+] Match: shopify-pics --> 403
-[+] Match: shopify-assets --> 403
-[+] Match: shopify-development --> 403
-[+] Match: shopify-content --> 403
-[+] Match: shopify-ops --> 200
+   ____             __             __  __
+  / __/__ ____  ___/ /______ ____ / /_/ /__
+ _\ \/ _ `/ _ \/ _  / __/ _ `(_-</ __/ / -_)
+/___/\_,_/_//_/\_,_/\__/\_,_/___/\__/_/\__/
+
+S3 bucket enumeration // release v1.2.4 // ysx
+
+
+[*] Commencing enumeration of 'shopify', reading 138 lines from 'bucket-names.txt'.
+
+[+] Checking potential match: shopify-content --> 403
+
+An error occurred (AccessDenied) when calling the ListObjects operation: Access Denied
+
 ```
 
 ### Status codes and testing
