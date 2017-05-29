@@ -9,7 +9,7 @@
 
 Inspired by a conversation with Instacart's [@nickelser](https://github.com/nickelser) on HackerOne, I've optimised and published Sandcastle – a Python script for AWS S3 bucket enumeration, formerly known as bucketCrawler.
 
-The script takes a target name as the "stem" argument (e.g. `instacart`) and iterates through a text file containing bucket name permutations, e.g. as below:
+The script takes a target name as the "stem" argument (e.g. `shopify`) and iterates through a text file containing bucket name permutations, e.g. as below:
 
 ```
 -training
@@ -20,6 +20,7 @@ The script takes a target name as the "stem" argument (e.g. `instacart`) and ite
 -elasticsearch
 [...]
 ```
+
 ## Getting started
 I've temporarily disabled Pip distribution. Here's how to get started:
 1. Clone this repo.
