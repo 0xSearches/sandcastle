@@ -22,10 +22,11 @@ The script takes a target name as the "stem" argument (e.g. `shopify`) and itera
 ```
 
 ## Getting started
-I've temporarily disabled Pip distribution. Here's how to get started:
+I've temporarily disabled PyPi distribution. So, here's how to get started:
+
 1. Clone this repo.
 2. Run `sandcastle.py` with a target name and input file (grab an example from this repo)
-3. Matching bucket permutations will be identified, and read permissions tested
+3. Matching bucket permutations will be identified, and read permissions tested.
 
 ```
 usage: sandcastle.py [-h] -t targetStem [-f inputFile]
@@ -33,7 +34,7 @@ usage: sandcastle.py [-h] -t targetStem [-f inputFile]
 arguments:
   -h, --help            show this help message and exit
   -t targetStem, --target targetStem
-                        Select a target stem name (e.g. 'instacart')
+                        Select a target stem name (e.g. 'shopify')
   -f inputFile, --file inputFile
                         Select a bucket permutation file (default: bucket-
                         names.txt)
