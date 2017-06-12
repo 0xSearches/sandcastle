@@ -1,15 +1,10 @@
 <p align="center">
    
 <img src="https://cloud.githubusercontent.com/assets/4115778/24827505/eab7322a-1c42-11e7-96f3-dbc772da5f10.png" width="70%" alt="Sandcastle logo - AWS S3 bucket enumeration">
-<br/>
-<img src="https://img.shields.io/github/issues/yasinS/sandcastle.svg" alt="Issues">
-<img src="https://img.shields.io/github/issues-pr-closed-raw/yasinS/sandcastle.svg" alt="PRs">
-<img src="https://img.shields.io/pypi/v/sandcastle.svg" alt="Version">
-</p>
 
 Inspired by a conversation with Instacart's [@nickelser](https://github.com/nickelser) on HackerOne, I've optimised and published Sandcastle – a Python script for AWS S3 bucket enumeration, formerly known as bucketCrawler.
 
-The script takes a target name as the "stem" argument (e.g. `shopify`) and iterates through a text file containing bucket name permutations, e.g. as below:
+The script takes a target's name as the stem argument (e.g. `shopify`) and iterates through a file of bucket name permutations, such as the ones below:
 
 ```
 -training
@@ -22,9 +17,9 @@ The script takes a target name as the "stem" argument (e.g. `shopify`) and itera
 ```
 
 ## Getting started
-I've temporarily disabled PyPi distribution. So, here's how to get started:
+Here's how to get started:
 
-1. Clone this repo.
+1. Clone this repo (PyPi distribution temporarily disabled).
 2. Run `sandcastle.py` with a target name and input file (grab an example from this repo)
 3. Matching bucket permutations will be identified, and read permissions tested.
 
@@ -79,7 +74,7 @@ From the Amazon [documentation](http://docs.aws.amazon.com/AmazonS3/latest/dev/U
 > In terms of implementation, buckets and objects are resources, and Amazon S3 provides APIs for you to manage them.
 
 ## Closing remarks
-* This is my first public security project; Sandcastle is published under the MIT License.
+* This is my first public security project. Sandcastle is published under the MIT License.
 * Usage acknowlegements:
   * Castle (icon) by Andrew Doane from the Noun Project
   * Nixie One (logo typeface) free by Jovanny Lemonad
