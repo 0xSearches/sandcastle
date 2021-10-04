@@ -19,6 +19,7 @@ The script takes a target's name as the stem argument (e.g. `shopify`) and itera
 ## Requirements
 * Python 3
 * Python requests module
+* [AWS CLI Version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 
 ## Getting started
 Here's how to get started:
@@ -26,7 +27,7 @@ Here's how to get started:
 1. Clone this repo.
 2. Install python virtual environment `python3 -m pip install --user virtualenv`
 3. Create and activate virtual environment `python3 -m venv env && source env/bin/activate` 
-4. Install requirements `pip install -r requirements.txt`
+4. Install python module(s) `pip install -r requirements.txt`
 5. Run `sandcastle.py` with a target name and input file (grab an example from this repo)
 6. Matching bucket permutations will be identified, and read permissions tested.
 * When you're finished running the project you can exit the virtual environment with the command `deactivate`
