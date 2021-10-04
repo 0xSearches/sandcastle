@@ -20,6 +20,10 @@ The script takes a target's name as the stem argument (e.g. `shopify`) and itera
 * Python 3
 * Python requests module
 * [AWS CLI Version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+* [AWS Account](https://portal.aws.amazon.com/billing/signup#/account)
+* [AWS Access Key ID and Secret Access Key](https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html)
+
+
 
 ## Getting started
 Here's how to get started:
