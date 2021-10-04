@@ -2,8 +2,14 @@
 __pycache__/
 *.py[cod]
 
+# python virtualenv
+env/
+
 # C extensions
 *.so
+
+# macOS
+.DS_Store
 
 # Distribution / packaging
 bin/

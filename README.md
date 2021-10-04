@@ -16,12 +16,20 @@ The script takes a target's name as the stem argument (e.g. `shopify`) and itera
 [...]
 ```
 
+## Requirements
+* Python 3
+* Python requests module
+
 ## Getting started
 Here's how to get started:
 
-1. Clone this repo (PyPi distribution temporarily disabled).
-2. Run `sandcastle.py` with a target name and input file (grab an example from this repo)
-3. Matching bucket permutations will be identified, and read permissions tested.
+1. Clone this repo.
+2. Install python virtual environment `python3 -m pip install --user virtualenv`
+3. Create and activate virtual environment `python3 -m venv env && source env/bin/activate` 
+4. Install requirements `pip install -r requirements.txt`
+5. Run `sandcastle.py` with a target name and input file (grab an example from this repo)
+6. Matching bucket permutations will be identified, and read permissions tested.
+* When you're finished running the project you can exit the virtual environment with the command `deactivate`
 
 ```
 usage: sandcastle.py [-h] -t targetStem [-f inputFile]
@@ -54,11 +62,11 @@ An error occurred (AccessDenied) when calling the ListObjects operation: Access 
 
 ### Status codes and testing
 
-| Status code        | Definition           | Notes  |
-| ------------- | ------------- | -----|
-| 404      | Bucket Not Found | Not a target for analysis (hidden by default)|
-| 403      | Access Denied      |   Potential target for analysis via the CLI |
-| 200 | Publicly Accessible      |    Potential target for analysis via the CLI  |
+| Status code        | Definition     | Notes|
+| ------------- | -------------       | -----|
+| 404           | Bucket Not Found    | Not a target for analysis (hidden by default)|
+| 403           | Access Denied       | Potential target for analysis via the CLI |
+| 200           | Publicly Accessible | Potential target for analysis via the CLI |
 
 ### AWS CLI commands
 Here's a quick reference of some useful AWS CLI commands:
