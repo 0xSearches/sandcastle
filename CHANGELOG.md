@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to the Sandcastle script will be documented in this file.
 
+## 1.3.0 - 2022-12-01
+* Ported and refactored for use with Python3
+* Added Mac support for homebrew installed AWS command line utils
+* Added support for AWS Cli tools installed in non standard locations with the -a parameter
+
+
 ## 1.2.4 – 2017-05-28
 * Temporarily removed PyPi distribution channel
 * Shipping an updated bucket names wordlist
