@@ -2,7 +2,9 @@
    
 <img src="https://cloud.githubusercontent.com/assets/4115778/24827505/eab7322a-1c42-11e7-96f3-dbc772da5f10.png" width="70%" alt="Sandcastle logo - AWS S3 bucket enumeration">
 
-Inspired by a conversation with Instacart's [@nickelser](https://github.com/nickelser) on HackerOne, I've optimised and published Sandcastle – a Python script for AWS S3 bucket enumeration, formerly known as bucketCrawler.
+Originally inspired by a conversation with Instacart's [@nickelser](https://github.com/nickelser) on HackerOne, 0xsearches optimized and published Sandcastle – a Python script for AWS S3 bucket enumeration, formerly known as bucketCrawler.
+
+In December 2022, Securityshrimp updated this code to work with Python 3 while adding Mac support, and support for any other flavor of *nix by adding the ability to provide a custom path the the AWS command line binary
 
 The script takes a target's name as the stem argument (e.g. `shopify`) and iterates through a file of bucket name permutations, such as the ones below:
 
@@ -19,8 +21,9 @@ The script takes a target's name as the stem argument (e.g. `shopify`) and itera
 ## Getting started
 Here's how to get started:
 
-1. Clone this repo (PyPi distribution temporarily disabled).
-2. Run `sandcastle.py` with a target name and input file (grab an example from this repo)
+1. Clone this repo.
+2. pip install requests if you dont have it installed
+2. Run `sandcastle.py` with a target name (`-t name`) and input file (`-f foo.txt`)
 3. Matching bucket permutations will be identified, and read permissions tested.
 
 ```
@@ -33,6 +36,7 @@ arguments:
   -f inputFile, --file inputFile
                         Select a bucket permutation file (default: bucket-
                         names.txt)
+  -a aws binary, --awscli-path  /path/to/aws binary
 ```
 
 ```
@@ -41,7 +45,7 @@ arguments:
  _\ \/ _ `/ _ \/ _  / __/ _ `(_-</ __/ / -_)
 /___/\_,_/_//_/\_,_/\__/\_,_/___/\__/_/\__/
 
-S3 bucket enumeration // release v1.2.4 // ysx
+S3 bucket enumeration // release v1.3.0 // SecurityShrimp
 
 
 [*] Commencing enumeration of 'shopify', reading 138 lines from 'bucket-names.txt'.
@@ -74,6 +78,7 @@ From the Amazon [documentation](http://docs.aws.amazon.com/AmazonS3/latest/dev/U
 > In terms of implementation, buckets and objects are resources, and Amazon S3 provides APIs for you to manage them.
 
 ## Closing remarks
+* I have taken over this project from 0xSearches.  Their gitub has been inactive since 2017
 * This is my first public security project. Sandcastle is published under the MIT License.
 * Usage acknowlegements:
   * Castle (icon) by Andrew Doane from the Noun Project
